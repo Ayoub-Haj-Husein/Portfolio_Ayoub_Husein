@@ -38,14 +38,10 @@ body {
   background: var(--color-bg);
   color: var(--color-white);
   line-height: 1.7;
-  background-image: url(../src/assets/strip-texture-dark-blue-wallpaper-preview.jpg);
-  background-size: cover; 
-  background-position: center; 
-  background-attachment: fixed;
+  background-image: url(../src/assets/bg-texture-png.png);
 }
 
 /* ============== General Styles ============== */
-
 container {
   width: var(--container-width-lg);
   margin: 0 auto;
@@ -112,4 +108,26 @@ img {
   display: block;
   width: 100%;
   object-fit: cover;
+}
+
+/* ============== MEDIA QUERIES (MEDIUM DEVICES) ============== */
+@media screen and (max-width: 1024px) {
+  .container {
+    width: var(--container-width-md);
+  }
+
+  section {
+    margin-top: 6rem;
+  }
+}
+
+/* ============== MEDIA QUERIES (SMALL DEVICES) ============== */
+@media screen and (max-width: 600px) {
+  .container {
+    width: var(--container-width-sm);
+  }
+
+  section > h2 {
+    margin-bottom: 2rem;
+  }
 }
